@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>
+
+</title>
+
+
+
+</head>
+
+<body>
+<img class="mySlides" src="11.png">
+<img class="mySlides" src="img_lights.jpg">
+<img class="mySlides" src="img_mountains.jpg">
+<img class="mySlides" src="img_forest.jpg">
+
+<script type="text/javascript" >
+var slideno = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideno = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+    
+    <div class="w3-display-container mySlides">
+  <img src="11.png" style="width:100%">
+  <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+    Trial
+  </div>
+</div>
+}
+</script>
+
+
+
+
+</body>
+
+
+
+</html>
