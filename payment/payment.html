@@ -5,15 +5,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
-  font-family: Arial;
+  font-family: Verdana;
   font-size: 17px;
   padding: 8px;
 }
-
 * {
   box-sizing: border-box;
 }
-
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -21,84 +19,71 @@ body {
   flex-wrap: wrap;
   margin: 0 -16px;
 }
-
 .col-25 {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
 }
-
 .col-50 {
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
 }
-
 .col-75 {
   -ms-flex: 75%; /* IE10 */
   flex: 75%;
 }
-
 .col-25,
 .col-50,
 .col-75 {
   padding: 0 16px;
 }
-
 .container {
   background-color: #f2f2f2;
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
 }
-
 input[type=text] {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 3px;
 }
-
 label {
   margin-bottom: 10px;
   display: block;
 }
-
 .icon-container {
   margin-bottom: 20px;
   padding: 7px 0;
   font-size: 24px;
 }
-
 .btn {
   background-color: #4CAF50;
   color: white;
   padding: 12px;
-  margin: 10px 0;
+  margin: 10px 1mm;
   border: none;
   width: 50%;
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
+  float: left;
   
 }
-
 .btn:hover {
   background-color: #45a049;
 }
-
 a {
   color: #2196F3;
 }
-
 hr {
   border: 1px solid lightgrey;
 }
-
 span.price {
   float: right;
   color: grey;
 }
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
   .row {
@@ -112,7 +97,7 @@ span.price {
 </head>
 <body>
 
-<h2>Checkout </h2>
+<h1>Checkout </h1>
 <div class="row">
   <div class="col-75">
     <div class="container">
@@ -136,7 +121,7 @@ span.price {
                 <input type="text" id="state" name="state" >
               </div>
               <div class="col-50">
-                <label for="zip">Zip</label>
+                <label for="pin">Pin Code</label>
                 <input type="text" id="zip" name="zip" >
               </div>
             </div>
@@ -151,15 +136,14 @@ span.price {
               <i class="fa fa-cc-mastercard" style="color:red;"></i>
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
-            <label for="bname">Name of Bank</label>
+            <label for="bname">Type of Card</label>
 				           
             <form action="">
 					<select>
-						<option value="ICICI">ICICI Bank</option>   
-						<option value="SBI">State Bank of India</option>  
-						<option value="Axis">Axis Bank</option>  
-						<option value="HDFC">HDFC Bank</option>  
-						<option value="HSBC">HSBC Bank</option>    
+						<option value="visa">Visa</option>   
+						<option value="master">MasterCard</option>  
+						<option value="AE">American Express</option>  
+						<option value="Dis">Discover</option>     
 						<option value="Other">Other</option> 
 					</select>        
             </form>
