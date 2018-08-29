@@ -59,7 +59,7 @@ body{
 
 .register{
 	position: absolute;
-	top: calc(50% - 75px);
+	top: calc(50% - 150px);
 	left: calc(50% - 10px);
 	height: 150px;
 	width: 350px;
@@ -123,9 +123,23 @@ body{
 	margin-top: 10px;
 }
 
+.register p{
+	font-size: 16px;
+}
 
-.register form[type=radio]{
+.register input[type=button]{
+	width: 300px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #000000;
 	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
 }
+
+
