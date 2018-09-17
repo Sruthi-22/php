@@ -17,7 +17,11 @@
 	</div>
 	
 	<style>
-		body {font-family: Arial, Helvetica, sans-serif;}
+		
+		@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+		@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+		
+		body {font-family:'Exo', sans-serif;}
 		* {box-sizing: border-box;}
 
 		/* Button used to open the chat form - fixed at the bottom of the page */
@@ -97,9 +101,9 @@
 
 		<div class="chat-popup" id="myForm">
 		  <form action="/action_page.php" class="form-container">
-			<h1>Suggestions</h1>
+			<h1>Feedback Form</h1>
 
-			<label for="msg"><b>Give your ideas for development of this site. Thank you</b></label>
+			<label for="msg">Give your ideas for development of this site. Thank you</label>
 			<textarea placeholder="Type message.." name="msg" required></textarea>
 
 			<button type="submit" class="btn">Send</button>
